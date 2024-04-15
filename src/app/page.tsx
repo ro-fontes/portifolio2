@@ -1,113 +1,149 @@
-import Image from "next/image";
+import { Widget } from "@/components/widget";
+import AboutMe from "@/assets/About me.svg";
+import Notebook from "@/assets/Notebook.svg";
+import Bookshelf from "@/assets/Bookshelf.svg";
+import TechStack from "@/assets/Tech Stack.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="text-white px-4 lg:px-60">
+      <section className="mt-40 flex flex-col gap-12">
+        <div className="text-BASIC_ONYX dark:text-BASIC_WHITE text-7xl font-bold">
+          <span className="text-BASIC_DARK_GRAY">I’m </span>
+          Rodrigo Fontes
         </div>
-      </div>
 
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <span className="text-BASIC_DARK_GRAY font-medium text-2xl">
+          A front-end engineer and UI/UX designer helping startups turn their
+          visions into a digital reality. I specialize in designing and building
+          modern mobile and web-based apps.
+        </span>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className="flex flex-col lg:flex-row gap-2">
+          <button className="font-medium text-lg rounded-lg px-8 py-4 bg-gradient-to-b from-[#1a1a1a] to-[#131313]">
+            See my resume
+          </button>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <button className="font-medium text-lg rounded-lg px-8 py-4 bg-gradient-to-b from-[#1a1a1a] to-[#131313]">
+            Get in touch
+          </button>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
+      <section className="mt-96">
+        <h1 className="text-5xl font-bold mb-8">Selected Work</h1>
+        <div className="flex flex-col gap-8">
+          <div className="rounded-3xl bg-BASIC_ONYX h-[564px] border border-DARK_CARD_BORDER flex p-14">
+            <div className="flex-1 flex flex-col">
+              <span>StackLogo</span>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+              <h2 className="text-3xl font-extrabold">React Documentation</h2>
+              <span className="mt-4 text-base text-BASIC_DARK_GRAY">
+                With the release of the new React website on March 16, there was
+                a need for localization to make the documentation accessible to
+                Arabic-speaking developers. I contributed to translating several
+                documentation, worked with great developers, Improved my ability
+                to write better PR requests, and as a side effect, I now know
+                more about the Arabic grammar.
+              </span>
+            </div>
+
+            <div className="flex-1">Imagem</div>
+          </div>
+
+          <div className="rounded-3xl bg-BASIC_ONYX h-[564px] border border-DARK_CARD_BORDER flex p-14">
+            <div className="flex-1 flex flex-col">
+              <span>StackLogo</span>
+
+              <h2 className="text-3xl font-extrabold">React Documentation</h2>
+              <span className="mt-4 text-base text-BASIC_DARK_GRAY">
+                With the release of the new React website on March 16, there was
+                a need for localization to make the documentation accessible to
+                Arabic-speaking developers. I contributed to translating several
+                documentation, worked with great developers, Improved my ability
+                to write better PR requests, and as a side effect, I now know
+                more about the Arabic grammar.
+              </span>
+            </div>
+
+            <div className="flex-1">Imagem</div>
+          </div>
+
+          <div className="rounded-3xl bg-BASIC_ONYX h-[564px] border border-DARK_CARD_BORDER flex p-14">
+            <div className="flex-1 flex flex-col">
+              <span>StackLogo</span>
+
+              <h2 className="text-3xl font-extrabold">React Documentation</h2>
+              <span className="mt-4 text-base text-BASIC_DARK_GRAY">
+                With the release of the new React website on March 16, there was
+                a need for localization to make the documentation accessible to
+                Arabic-speaking developers. I contributed to translating several
+                documentation, worked with great developers, Improved my ability
+                to write better PR requests, and as a side effect, I now know
+                more about the Arabic grammar.
+              </span>
+            </div>
+
+            <div className="flex-1">Imagem</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mt-32">
+        <h1 className="text-5xl font-bold mb-8">Get to know me</h1>
+
+        <div className="grid grid-cols-1 lg:grid-cols-3 grid-rows-2 gap-3">
+          <Widget
+            title="About me"
+            description="Who I am and what I do"
+            image={AboutMe}
+          />
+
+          <Widget
+            title="Notebook"
+            description="My thoughts, insights, and reflections"
+            image={Notebook}
+          />
+
+          <Widget
+            title="Bookshelf"
+            description="Books and pieces of wisdom I’ve enjoyed reading"
+            image={Bookshelf}
+          />
+
+          <Widget
+            title="Tech Stack"
+            description="The dev tools, apps, devices, and games I use and play."
+            image={TechStack}
+          />
+
+          <Widget
+            title="Projects"
+            description="The dev tools, apps, devices, and games I use and play."
+            image={TechStack}
+          />
+
+          <Widget
+            title="My Vscode Config."
+            description="The dev tools, apps, devices, and games I use and play."
+            image={TechStack}
+          />
+        </div>
+      </section>
+
+      <section className="mt-36 mb-28 flex flex-col lg:flex-row justify-between items-center">
+        <div>
+          <h1 className="text-5xl font-bold mb-2">Let’s work together</h1>
+          <span className="text-xl text-BASIC_MEDIUM_GRAY">
+            Want to discuss an opportunity to create something great? I’m ready
+            when you are.
+          </span>
+        </div>
+
+        <button className="font-medium text-lg rounded-lg px-8 py-4 bg-gradient-to-b from-[#1a1a1a] to-[#131313]">
+          Get in touch
+        </button>
+      </section>
     </main>
   );
 }
