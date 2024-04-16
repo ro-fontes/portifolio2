@@ -2,7 +2,7 @@ import { Question } from "./components/question";
 
 export default function AboutMe() {
   return (
-    <div className="mt-44 divide-y divide-DARK_WHITE_10">
+    <div className="mt-40 divide-y divide-LIGHT_CARD_BORDER dark:divide-DARK_WHITE_10">
       <div className="flex flex-col gap-3 px-4 lg:px-60 mb-16">
         <h1 className="text-7xl font-bold text-BASIC_ONYX dark:text-BASIC_WHITE">
           A little bit about me
@@ -12,7 +12,7 @@ export default function AboutMe() {
         </h3>
       </div>
 
-      <div className="flex flex-col px-4 lg:px-60 gap-4 py-14">
+      <div className="flex flex-col gap-3 px-4 lg:px-60 py-14">
         <Question
           question="Who I am"
           answer="I’m Eihab (Pronounced “Ee-hab”) a multi-disciplinary front-end

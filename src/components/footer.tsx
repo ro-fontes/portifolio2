@@ -6,7 +6,7 @@ import { LinkPage } from "./link-page";
 export function Footer() {
   return (
     <>
-      <footer className="border-t border-DARK_WHITE_10 h-80 select-none flex justify-between px-60 pt-16 text-BASIC_MEDIUM_GRAY">
+      <footer className="border-t border-DARK_WHITE_10 h-80 select-none flex justify-between px-4 lg:px-[26.25rem] pt-16 text-BASIC_MEDIUM_GRAY">
         <div className="flex flex-col h-full justify-between">
           <div className="flex flex-col gap-5">
             <Image src={logo} alt="logo" />
